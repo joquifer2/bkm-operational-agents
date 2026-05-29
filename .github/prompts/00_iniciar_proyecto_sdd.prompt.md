@@ -1,9 +1,9 @@
 ---
 agent: agent
-description: Arranque operativo del proyecto bkm-operational-agents bajo metodologia SSD, respetando el plan aprobado y evitando implementacion prematura.
+description: Arranque operativo del proyecto bkm-operational-agents bajo metodologia SDD, respetando el plan aprobado y evitando implementacion prematura.
 ---
 
-# Prompt inicial - Iniciar proyecto SSD
+# Prompt inicial - Iniciar proyecto SDD
 
 Usa este prompt como punto de arranque para cualquier sesion de trabajo en bkm-operational-agents.
 
@@ -12,8 +12,10 @@ Usa este prompt como punto de arranque para cualquier sesion de trabajo en bkm-o
 - Este repositorio es una capa IA/operativa.
 - La verdad funcional del negocio vive en bkm_procesos.
 - No se debe duplicar logica funcional de SOPs, dashboards ni reglas de negocio.
-- Estado actual: SSD -> Specification / Structure.
-- Foco inicial del primer agente: seguimiento y control operativo del Plan de Demanda.
+- Estado actual: SDD -> Specification / Structure.
+- SDD = Spec Driven Development.
+- Foco inicial del primer agente: informe mensual de indicadores operativos de Planificacion de Demanda.
+- Comando operativo previsto para ese caso de uso: /informe-planificacion-demanda.
 
 ## Referencia explicita al plan aprobado
 
@@ -30,7 +32,7 @@ Debes seguir el plan aprobado del proyecto, que establece:
 9. Sin tools reales por ahora.
 10. Sin duplicar logica funcional.
 
-## Reglas operativas SSD
+## Reglas operativas SDD
 
 - Prioriza Specification y Structure documental.
 - No implementes codigo ejecutable.
@@ -39,7 +41,7 @@ Debes seguir el plan aprobado del proyecto, que establece:
 
 ## Comportamiento esperado de Copilot
 
-- Trabajar como arquitecto SSD, no como implementador prematuro.
+- Trabajar como arquitecto SDD, no como implementador prematuro.
 - Producir contratos claros, limites y criterios de salida.
 - Señalar riesgos de sobreingenieria y arquitectura prematura.
 - Mantener filosofia human-in-the-loop, explicable y mantenible.

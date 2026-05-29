@@ -34,9 +34,9 @@ Regla obligatoria:
 
 Cuando exista conflicto entre documentos, prevalece la verdad funcional de bkm_procesos.
 
-## 3. Metodologia SSD
+## 3. Metodologia SDD
 
-Este repositorio debe evolucionar por fases SSD:
+Este repositorio debe evolucionar por fases SDD (Spec Driven Development):
 
 - Specification: definicion de alcance, contratos, limites, riesgos y criterios de avance.
 - Structure: organizacion documental y esqueletos minimos no ejecutables.
@@ -44,7 +44,7 @@ Este repositorio debe evolucionar por fases SSD:
 
 Estado actual esperado:
 
-- SSD -> Specification / Structure.
+- SDD -> Specification / Structure.
 
 No se permite saltar a Development sin completar los criterios de salida definidos en specs.
 
@@ -55,10 +55,9 @@ Orden de precedencia:
 1. bkm_procesos como verdad funcional.
 2. specs del repo bkm-operational-agents.
 3. este archivo de copilot-instructions.
-4. archivos de .github/instructions.
+4. skills en .github/skills.
 5. prompts en .github/prompts.
-6. skills en .github/skills.
-7. docs, workflows, tools, memory y tests.
+6. docs, workflows, tools, memory y tests.
 
 Ningun artefacto de menor precedencia puede contradecir a uno de mayor precedencia.
 
@@ -107,13 +106,30 @@ No sustituye:
 
 ## 8. Foco inicial del primer agente
 
-El foco inicial del sistema se centra en un unico agente principal de:
+El foco inicial del sistema se centra en un unico agente documental:
 
-- seguimiento y control operativo del Plan de Demanda;
-- interpretacion de desviaciones y senales operativas;
-- apoyo a decisiones humanas con trazabilidad.
+- nombre funcional recomendado: Agente de informe mensual de Planificacion de Demanda;
+- nombre tecnico sugerido: demand_planning_report_agent;
+- comando operativo previsto: /informe-planificacion-demanda.
 
-El agente no sustituye el dashboard ni la definicion funcional del proceso.
+Alcance del agente:
+
+- generar el informe mensual de indicadores operativos del proceso de Planificacion de Demanda;
+- comparar hipotesis inicial del periodo vs realidad observada al cierre;
+- trabajar solo con datos ya preparados o proporcionados por el usuario.
+
+Limites explicitos:
+
+- no planifica;
+- no decide inversion;
+- no ejecuta acciones;
+- no modifica datos;
+- no registra ajustes;
+- no sustituye validacion humana;
+- no crea KPIs nuevos;
+- no usa conversiones Ads como leads;
+- no usa CPL como eje principal;
+- no incorpora tipologia de campana en v1 (queda para posible v2).
 
 ## 9. Regla de no implementacion prematura
 

@@ -1,8 +1,10 @@
-# Matriz de artefactos SSD - bkm-operational-agents
+# Matriz de artefactos SDD - bkm-operational-agents
 
 ## 1. Objetivo
 
-Definir que tipo de artefactos existen en el repositorio, para que sirven y que esta permitido en cada fase SSD.
+Definir que tipo de artefactos existen en el repositorio, para que sirven y que esta permitido en cada fase SDD.
+
+SDD significa Spec Driven Development.
 
 ## 2. Tabla de artefactos
 
@@ -14,12 +16,22 @@ Definir que tipo de artefactos existen en el repositorio, para que sirven y que 
 | Skills | .github/skills/ | Capacidades documentales reutilizables | No obligatorio | Si, sin ejecucion compleja | Si, segun aprobacion |
 | Specs de repositorio | specs/ | Contratos de alcance y arquitectura documental | Si | Si | Si |
 | Specs de agente | specs/ | Definicion funcional y limites del agente | Si | Si | Si |
+| Contracts | specs/contracts/ | Contratos documentales de input/output del informe | Si | Si | Si |
 | Gates de gobernanza | docs/gates/ | Readiness y transicion entre fases | Si | Si | Si |
 | Docs de proyecto | docs/ | Contexto, taxonomia, decisiones y matriz | Si | Si | Si |
 | Workflows | workflows/ | Flujos conceptuales no ejecutables | No obligatorio | Si, conceptual | Si, si se autoriza |
 | Tools | tools/ | Contratos de tools futuras | No obligatorio | Si, contractual | Si, implementable tras aprobacion |
 | Politica de memoria | memory/ | Politica y limites de memoria | No obligatorio | Si | Si |
 | Tests | tests/ | Evaluaciones y criterios de calidad | No obligatorio | Opcional, documental | Si, tecnico cuando aplique |
+
+## 2.1 Artefactos obligatorios del primer caso de uso
+
+- spec del agente de informe mensual: specs/02_spec_agente_principal_v0_1.md
+- contrato del informe: specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md
+- skill documental: .github/skills/informe-planificacion-demanda/SKILL.md
+- prompt/comando: .github/prompts/informe-planificacion-demanda.prompt.md
+- workflow conceptual: workflows/01_workflow_informe_planificacion_demanda.md
+- eval documental: tests/evals/evaluar_informe_planificacion_demanda.md
 
 ## 3. Reglas transversales
 

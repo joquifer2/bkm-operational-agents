@@ -1,8 +1,8 @@
-# SSD instructions - bkm-operational-agents
+# SDD instructions - bkm-operational-agents
 
 ## 1. Objetivo de estas instrucciones
 
-Asegurar que el trabajo se mantiene en la metodologia SSD y respeta el plan aprobado del proyecto.
+Asegurar que el trabajo se mantiene en la metodologia SDD y respeta el plan aprobado del proyecto.
 
 Estas instrucciones aplican a todo trabajo en este repositorio hasta que se autorice expresamente el paso a Development.
 
@@ -10,11 +10,11 @@ Estas instrucciones aplican a todo trabajo en este repositorio hasta que se auto
 
 Estado vigente:
 
-- SSD -> Specification / Structure.
+- SDD -> Specification / Structure.
 
 No estamos en Development.
 
-## 3. Reglas SSD por fase
+## 3. Reglas SDD por fase
 
 ### 3.1 Specification
 
@@ -62,7 +62,7 @@ Hasta ese momento, cualquier implementacion queda fuera de alcance.
 - mantener separacion estricta respecto a bkm_procesos;
 - no duplicar logica funcional;
 - no crear decisiones tecnologicas definitivas;
-- mantener foco inicial del primer agente en seguimiento y control operativo del Plan de Demanda;
+- mantener foco inicial del primer agente en informe mensual de indicadores operativos del proceso de Planificacion de Demanda;
 - marcar pendientes y riesgos cuando falte validacion.
 
 ## 5. Restricciones actuales obligatorias

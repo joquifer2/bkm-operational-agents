@@ -1,81 +1,135 @@
-# Spec v0.1 - Agente principal de seguimiento y control operativo del Plan de Demanda
+# Spec v0.1 - Agente de informe mensual de Planificacion de Demanda
 
 ## 1. Proposito
 
-Definir el alcance funcional del agente principal en fase SSD -> Structure, sin implementacion tecnica.
+Definir el alcance, limites y comportamiento esperado del agente encargado de generar el informe mensual de indicadores operativos del proceso de Planificacion de Demanda.
 
-El agente principal existe para asistir la operativa humana de seguimiento y control del periodo, manteniendo trazabilidad y contexto.
+## 2. Fuente funcional de verdad
 
-## 2. Relacion con bkm_procesos
+- Repositorio: joquifer2/bkm-procesos
+- Documento: procesos_publicitarios/01_proceso_planificacion_demanda.md
+- Seccion funcional principal: 11. Indicadores operativos
 
-La logica funcional del proceso vive en bkm_procesos.
+El agente no duplica el SOP. Solo lo referencia.
 
-Este agente:
+## 3. Rol del agente
 
-- se apoya en esa verdad funcional;
-- no redefine SOPs;
-- no recalcula la logica de negocio;
-- no sustituye dashboards ni validacion humana.
+El agente actua como redactor/analista de cierre del periodo.
 
-## 3. Foco funcional del agente
+Su funcion es comparar:
 
-Foco principal:
-
-- seguimiento operativo del periodo;
-- interpretacion de desviaciones y senales;
-- ayuda a decidir si actuar, validar o ajustar;
-- apoyo a comunicacion operativa y trazabilidad.
+- hipotesis inicial del periodo;
+- realidad observada al cierre;
+- desviaciones;
+- lectura por canal;
+- lectura por zona;
+- ajustes;
+- aprendizajes.
 
 ## 4. Fuera de alcance
 
-En esta fase, el agente no debe:
+El agente no debe:
 
-- construir plan inicial;
-- actuar como dashboard;
-- actuar como reporting autonomo;
-- automatizar decisiones;
-- modificar sistemas operativos;
-- ejecutar acciones en herramientas externas.
+- planificar demanda;
+- decidir inversion;
+- modificar el plan;
+- registrar ajustes;
+- registrar aprendizajes;
+- ejecutar campanas;
+- modificar BigQuery;
+- modificar Looker Studio;
+- conectarse a sistemas reales en esta fase;
+- inventar datos;
+- generar ordenes de accion;
+- sustituir la validacion humana;
+- crear KPIs nuevos;
+- incorporar tipologia de campana como dimension de analisis en v1.
 
-## 5. Principios de comportamiento
+## 5. Inputs esperados
 
-El agente debe ser:
+El agente podra trabajar con datos pegados/exportados por el usuario.
 
-- operacional;
-- razonador;
-- contextual;
-- trazable;
-- human-in-the-loop;
-- explicable;
-- mantenible.
+Inputs minimos:
 
-No debe ser:
+- periodo analizado;
+- leads objetivo;
+- leads previstos cartera;
+- leads previstos nueva captacion;
+- inversion prevista;
+- distribucion prevista por canal;
+- distribucion prevista por zona;
+- leads reales del periodo;
+- inversion real del periodo;
+- visitas reales/acumuladas si estan disponibles;
+- desviaciones plan vs realidad;
+- ajustes registrados;
+- aprendizajes registrados.
 
-- autonomo;
-- hiperautomatizado;
-- sobreingenierizado;
-- artificialmente multiagente.
+Fuentes futuras autorizadas, solo como contrato documental:
 
-## 6. Inputs conceptuales
+- bkm_marts.agg_planificacion_demanda_visual
+- bkm_marts.agg_cartera_pipeline_necesidad_operativa_zona
+- raw_external.sheet_metricas_visibles_dashboard
 
-Inputs previstos a nivel documental:
+Aclaracion: en esta fase no se implementa conexion real.
 
-- contexto funcional de bkm_procesos;
-- estado operativo del periodo compartido por usuario;
-- desviaciones, alertas y notas de seguimiento;
-- criterios operativos definidos en specs del repositorio.
+## 6. Output esperado
 
-Nota: esta version no define conectores tecnicos ni ingestion real de datos.
+Informe en Markdown con estructura obligatoria:
 
-## 7. Outputs esperados
+1. Resumen ejecutivo.
+2. Hipotesis inicial del periodo.
+3. Resultado observado al cierre.
+4. Desviacion plan vs realidad.
+5. Lectura por canal.
+6. Lectura por zona.
+7. Cartera, pipeline y necesidad operativa.
+8. Ajustes realizados.
+9. Aprendizajes del periodo.
+10. Riesgos o puntos de atencion.
+11. Recomendacion operativa para el siguiente ciclo.
 
-- lectura operativa del estado del periodo;
-- interpretacion contextual de desviaciones;
-- recomendaciones de seguimiento o validacion humana;
-- borradores de comunicacion operativa;
-- borradores de trazabilidad de ajustes y aprendizaje.
+La recomendacion debe formularse como propuesta para revision humana, no como decision automatica.
 
-## 8. Restricciones de arquitectura y desarrollo
+## 7. Reglas de interpretacion
+
+- Separar inicio del periodo y cierre del periodo.
+- No confundir objetivos con resultados.
+- No sumar stocks como flujos.
+- No sumar snapshots entre fechas.
+- No sumar acumulados entre filas.
+- No usar conversiones Ads como leads.
+- No usar CPL como eje principal.
+- Distinguir zonas operativas de incidencias de zona/atribucion.
+- Distinguir canal y zona.
+- No interpretar zonas no clasificadas como zonas comerciales planificadas.
+- No introducir tipologia de campana en v1.
+- Senalar datos ausentes antes de emitir conclusiones fuertes.
+
+## 8. Nivel de confianza
+
+El informe debe indicar cuando una lectura tiene baja confianza por:
+
+- datos incompletos;
+- ausencia de metricas de cierre;
+- falta de desglose por canal;
+- falta de desglose por zona;
+- inconsistencias entre plan y ejecucion;
+- ausencia de aprendizajes registrados.
+
+## 9. Criterio de calidad
+
+El agente produce un buen informe si:
+
+- respeta el SOP;
+- usa solo datos proporcionados o autorizados;
+- no inventa cifras;
+- diferencia hechos, interpretacion y recomendacion;
+- identifica desviaciones relevantes;
+- no propone acciones automaticas;
+- mantiene tono profesional, claro y operativo.
+
+## 10. Restricciones de arquitectura y desarrollo
 
 Esta spec mantiene las restricciones vigentes:
 
@@ -85,26 +139,8 @@ Esta spec mantiene las restricciones vigentes:
 - no tools reales;
 - no implementacion tecnica.
 
-## 9. Riesgos a controlar
-
-- desvio de alcance hacia automatizacion;
-- duplicacion funcional de bkm_procesos;
-- ambiguedad entre asistencia y decision autonoma;
-- salto prematuro de Structure a Development;
-- sobreingenieria arquitectonica sin validacion operativa.
-
-## 10. Criterio de readiness para fase posterior
-
-Se considera listo para evolucionar cuando:
-
-- el foco funcional del agente esta validado por negocio;
-- los limites de alcance estan claros y aceptados;
-- los outputs esperados estan acordados;
-- los riesgos principales tienen plan de control documental;
-- existe aprobacion humana explicita para continuar.
-
 ## 11. Estado del documento
 
 - Version: v0.1
-- Fase: SSD -> Structure
+- Fase: SDD -> Structure
 - Tipo: especificacion funcional de agente (no tecnica)

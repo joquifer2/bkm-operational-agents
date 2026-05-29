@@ -4,7 +4,7 @@
 
 bkm-operational-agents define la capa IA/operativa para asistencia y control documental sobre la operativa de BKM.
 
-Este repositorio no define la verdad funcional del negocio. Su finalidad es organizar contratos, instrucciones y artefactos de razonamiento operativo bajo metodologia SSD.
+Este repositorio no define la verdad funcional del negocio. Su finalidad es organizar contratos, instrucciones y artefactos de razonamiento operativo bajo metodologia SDD (Spec Driven Development).
 
 ## 2. Relacion con bkm_procesos
 
@@ -21,23 +21,26 @@ En caso de contradiccion, prevalece bkm_procesos.
 
 ## 2.1 Foco inicial del primer agente
 
-El primer agente del sistema se limita a:
-
-- seguimiento y control operativo del Plan de Demanda;
-- interpretacion contextual de desviaciones y senales;
-- apoyo a decision humana, comunicacion y trazabilidad.
+El primer agente del sistema se limita a generar el informe mensual de indicadores operativos del proceso de Planificacion de Demanda, comparando la hipotesis inicial del periodo con la realidad observada al cierre, a partir de datos ya preparados o proporcionados por el usuario.
 
 Queda fuera de alcance en esta fase:
 
-- planificacion estrategica automatica;
-- ejecucion automatica de acciones;
-- sustitucion del criterio humano.
+- no planifica;
+- no decide inversion;
+- no ejecuta acciones;
+- no modifica datos;
+- no registra ajustes;
+- no sustituye validacion humana;
+- no crea KPIs nuevos;
+- no usa conversiones Ads como leads;
+- no usa CPL como eje principal;
+- no incorpora distribucion por tipologia de campana en v1 (queda para posible v2).
 
 ## 3. Que pertenece aqui y que no
 
 ### 3.1 Si pertenece
 
-- contratos documentales SSD;
+- contratos documentales SDD;
 - instrucciones de Copilot;
 - prompts de trabajo;
 - skills documentales;
@@ -90,7 +93,7 @@ Los prompts deben:
 - tener una finalidad concreta;
 - ser reutilizables;
 - respetar la precedencia documental;
-- mantener foco en SSD.
+- mantener foco en SDD.
 
 Los prompts no deben:
 
@@ -167,7 +170,7 @@ No permitido:
 
 ## 13. Limites de la fase actual
 
-Fase actual: SSD -> Specification / Structure.
+Fase actual: SDD -> Specification / Structure.
 
 Limites:
 
@@ -185,10 +188,9 @@ Orden de precedencia:
 1. bkm_procesos como verdad funcional.
 2. specs del repositorio.
 3. .github/copilot-instructions.md.
-4. .github/instructions/.
+4. .github/skills/.
 5. .github/prompts/.
-6. .github/skills/.
-7. docs, workflows, tools, memory, tests.
+6. docs, workflows, tools, memory, tests.
 
 ## 15. Checklist para pasar a Development
 

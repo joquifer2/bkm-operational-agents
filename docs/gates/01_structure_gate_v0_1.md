@@ -2,7 +2,7 @@
 
 ## 1. Objetivo del gate
 
-Este gate define el criterio formal para pasar de SSD -> Structure a una fase posterior.
+Este gate define el criterio formal para pasar de SDD -> Structure a una fase posterior.
 
 En esta version, el gate es de gobernanza y readiness arquitectonica documental.
 No es un testing tecnico ni una validacion de implementacion.
@@ -13,7 +13,7 @@ Este gate se considera:
 
 - governance gate;
 - readiness criteria;
-- SSD transition gate;
+- SDD transition gate;
 - architecture readiness check.
 
 Queda fuera de alcance:
@@ -39,8 +39,8 @@ El gate verifica que el repositorio mantiene:
 
 - Existe una constitucion global en .github/copilot-instructions.md.
 - Existe una especificacion base del repositorio en specs/.
-- Existe una instruction SSD activa en .github/instructions/.
-- Existe un prompt de arranque SSD en .github/prompts/.
+- Existe una instruction SDD activa en .github/instructions/.
+- Existe un prompt de arranque SDD en .github/prompts/.
 
 ### 4.2 Consistencia de alcance
 
@@ -61,18 +61,26 @@ El gate verifica que el repositorio mantiene:
 
 - Existe taxonomia de artefactos y estructura de carpetas.
 - Existe matriz de artefactos con permitido/no permitido por fase.
-- Existe spec v0.1 del agente principal con foco operativo.
+- Existe spec v0.1 del agente de informe mensual con foco documental.
+- Existe contrato documental del informe mensual.
+- Existe skill documental del informe mensual.
+- Existe prompt/comando /informe-planificacion-demanda.
+- Existe eval documental del informe mensual.
 - Existe checklist de salida documental para fase posterior.
 
 ## 5. Evidencias esperadas
 
 - docs/gates/01_structure_gate_v0_1.md
-- docs/01_matriz_artefactos_ssd.md
+- docs/01_matriz_artefactos_sdd.md
 - specs/01_spec_repo_bkm_operational_agents.md
 - specs/02_spec_agente_principal_v0_1.md
+- specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md
 - .github/copilot-instructions.md
-- .github/instructions/ssd.instructions.md
-- .github/prompts/00_iniciar_proyecto_ssd.prompt.md
+- .github/instructions/sdd.instructions.md
+- .github/prompts/00_iniciar_proyecto_sdd.prompt.md
+- .github/skills/informe-planificacion-demanda/SKILL.md
+- .github/prompts/informe-planificacion-demanda.prompt.md
+- tests/evals/evaluar_informe_planificacion_demanda.md
 
 ## 6. Criterio de decision del gate
 
@@ -90,12 +98,12 @@ Este gate no permite autoaprobacion automatica por parte del agente.
 
 ## 8. Checklist de cierre del gate
 
-- [ ] Se confirma alcance SSD -> Structure.
+- [ ] Se confirma alcance SDD -> Structure.
 - [ ] Se confirma precedencia documental.
 - [ ] Se confirma no duplicacion funcional respecto a bkm_procesos.
 - [ ] Se confirma no framework, no runtime, no multiagente.
 - [ ] Se confirma no tools reales ni implementacion tecnica.
-- [ ] Se confirma spec del agente principal v0.1 publicada.
+- [ ] Se confirma spec del agente de informe mensual v0.1 publicada.
 - [ ] Se confirma matriz de artefactos publicada.
 - [ ] Se confirma aprobacion humana registrada.
 

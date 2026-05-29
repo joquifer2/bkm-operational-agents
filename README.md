@@ -6,14 +6,15 @@ Este repositorio trabaja sobre bkm_procesos como source of truth funcional y no 
 
 Estado actual:
 
-- SSD -> Specification / Structure.
+- SDD -> Specification / Structure.
+- SDD = Spec Driven Development.
 
 Alcance inicial:
 
 - estructura documental minima;
-- contratos SSD base;
+- contratos SDD base;
 - instrucciones, prompts y especificaciones.
-- foco inicial del primer agente en seguimiento y control operativo del Plan de Demanda.
+- foco inicial del primer agente en informe mensual de indicadores operativos de Planificacion de Demanda.
 
 Fuera de alcance por ahora:
 
