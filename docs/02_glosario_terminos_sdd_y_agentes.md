@@ -231,6 +231,14 @@ Ejemplo:
 
 # B
 
+## Backlog
+
+Lista ordenada de tareas relevantes pendientes o futuras.
+
+En este proyecto, el backlog vive en `docs/tasks.md` y sirve para mantener trazabilidad documental y técnica.
+
+---
+
 ## BigQuery Tool
 
 Tool futura que permitiría al agente consultar BigQuery.
@@ -815,6 +823,16 @@ El agente de informe no puede decidir inversión ni modificar datos.
 
 # M
 
+## MCP
+
+Model Context Protocol.
+
+Posible mecanismo futuro para conectar el agente con herramientas externas como Notion.
+
+En esta fase no debe implementarse.
+
+---
+
 ## Matriz de artefactos
 
 Documento que enumera qué tipos de artefactos existen, dónde viven y qué función cumplen.
@@ -1212,6 +1230,16 @@ No permite convertir la estructura en código ejecutable.
 ---
 
 # T
+
+## Task
+
+Tarea relevante registrada en el backlog documental del repositorio.
+
+No es una microacción ni una tarea diaria.
+
+Debe estar vinculada a una fase, artefacto o decisión del proyecto.
+
+---
 
 ## Taxonomía
 

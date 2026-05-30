@@ -19,6 +19,7 @@ SDD significa Spec Driven Development.
 | Contracts | specs/contracts/ | Contratos documentales de input/output del informe | Si | Si | Si |
 | Gates de gobernanza | docs/gates/ | Readiness y transicion entre fases | Si | Si | Si |
 | Docs de proyecto | docs/ | Contexto, taxonomia, decisiones y matriz | Si | Si | Si |
+| Tasks | docs/tasks.md | Backlog documental y técnico del repositorio | Opcional | Sí | Sí |
 | Workflows | workflows/ | Flujos conceptuales no ejecutables | No obligatorio | Si, conceptual | Si, si se autoriza |
 | Tools | tools/ | Contratos de tools futuras | No obligatorio | Si, contractual | Si, implementable tras aprobacion |
 | Politica de memoria | memory/ | Politica y limites de memoria | No obligatorio | Si | Si |
