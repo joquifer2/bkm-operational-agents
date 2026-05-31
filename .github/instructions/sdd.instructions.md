@@ -93,3 +93,33 @@ Estas instrucciones se consideran cumplidas cuando:
 - respeta el plan aprobado;
 - mantiene estado Specification / Structure;
 - no introduce implementacion prematura.
+
+## 8. Backlog Governance
+
+`docs/tasks.md` es un artefacto auxiliar de gobernanza.
+
+No sustituye:
+
+- specs;
+- contracts;
+- skills;
+- prompts;
+- gates;
+- evals.
+
+Toda tarea registrada debe estar vinculada a:
+
+- una fase SDD;
+- un artefacto;
+- una decision relevante;
+- una futura linea de trabajo.
+
+Las tareas deben representar trabajo significativo.
+
+No deben representar actividad diaria.
+
+Antes de crear nuevas tareas, comprobar si ya existe una tarea equivalente.
+
+Antes de marcar una tarea como completada, verificar que el criterio de cierre se ha cumplido.
+
+Si una tarea pierde relevancia o deja de aplicar, debe marcarse como descartada en lugar de eliminarse silenciosamente.

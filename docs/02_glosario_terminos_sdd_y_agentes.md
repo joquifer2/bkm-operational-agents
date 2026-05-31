@@ -239,6 +239,20 @@ En este proyecto, el backlog vive en `docs/tasks.md` y sirve para mantener traza
 
 ---
 
+## Backlog Governance
+
+Conjunto de reglas que determinan cuándo una tarea debe entrar, modificarse o cerrarse dentro de `docs/tasks.md`.
+
+Su objetivo es evitar que el backlog se convierta en una lista de actividad diaria y mantenerlo como representación fiel del trabajo pendiente relevante del repositorio.
+
+---
+
+## Backlog Review
+
+Proceso de revisión periódica del archivo `docs/tasks.md` para asegurar que las tareas siguen siendo relevantes, están correctamente clasificadas y reflejan el estado real del repositorio.
+
+---
+
 ## BigQuery Tool
 
 Tool futura que permitiría al agente consultar BigQuery.
@@ -1238,6 +1252,22 @@ Tarea relevante registrada en el backlog documental del repositorio.
 No es una microacción ni una tarea diaria.
 
 Debe estar vinculada a una fase, artefacto o decisión del proyecto.
+
+---
+
+## Task Lifecycle
+
+Ciclo de vida de una tarea dentro del backlog.
+
+Estados posibles:
+
+- Pendiente
+- En curso
+- Bloqueada
+- Hecha
+- Descartada
+
+Las tareas deben evolucionar mediante estos estados y no eliminarse sin justificación.
 
 ---
 

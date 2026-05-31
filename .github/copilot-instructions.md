@@ -141,3 +141,45 @@ Mientras no se autorice Development:
 - no crear automatizacion operativa.
 
 Primero se cierran contratos documentales y estructura base.
+
+## 10. TASKS GOVERNANCE
+
+El archivo `docs/tasks.md` actua como backlog documental y tecnico del repositorio.
+
+Su funcion es mantener trazabilidad de trabajo pendiente relevante dentro del ecosistema SDD.
+
+Antes de cerrar cualquier trabajo significativo, evaluar si dicho cambio afecta al backlog.
+
+Actualizar `docs/tasks.md` unicamente cuando ocurra alguna de las siguientes situaciones:
+
+- se crea un nuevo artefacto relevante;
+- se identifica una nueva linea de trabajo futura;
+- se detecta una dependencia importante;
+- se alcanza un readiness gate;
+- se completa una tarea registrada;
+- una tarea deja de ser necesaria;
+- aparece una nueva necesidad de Specification, Structure o Development futuro.
+
+No registrar:
+
+- commits;
+- cambios de formato;
+- correcciones menores;
+- tareas personales;
+- actividad diaria;
+- microacciones.
+
+El backlog debe reflejar trabajo significativo del repositorio, no actividad operativa cotidiana.
+
+## 11. Comprobacion de cierre para cambios significativos
+
+Antes de considerar completado un cambio significativo:
+
+1. Revisar si afecta a Specs.
+2. Revisar si afecta a Contracts.
+3. Revisar si afecta a Skills.
+4. Revisar si afecta a Prompts.
+5. Revisar si afecta a Gates.
+6. Revisar si requiere actualizacion de `docs/tasks.md`.
+
+Si la respuesta es si, actualizar el artefacto correspondiente.

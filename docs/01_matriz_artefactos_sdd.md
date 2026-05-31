@@ -34,6 +34,14 @@ SDD significa Spec Driven Development.
 - workflow conceptual: workflows/01_workflow_informe_planificacion_demanda.md
 - eval documental: tests/evals/evaluar_informe_planificacion_demanda.md
 
+## 2.2 Nota sobre Tasks
+
+Tasks constituye el backlog documental y técnico del repositorio.
+
+No sustituye herramientas de gestión de proyectos.
+
+Su finalidad es mantener trazabilidad de trabajo pendiente relevante dentro del ecosistema SDD.
+
 ## 3. Reglas transversales
 
 - bkm_procesos es siempre source of truth funcional.
