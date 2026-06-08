@@ -13,6 +13,7 @@ Alcance inicial:
 
 - estructura documental minima;
 - especificaciones SDD base;
+- agentes metodologicos SDD para gobernar el ciclo documental;
 - instructions, prompts y skills de trabajo.
 - foco inicial del primer agente en informe mensual de indicadores operativos de Planificacion de Demanda.
 

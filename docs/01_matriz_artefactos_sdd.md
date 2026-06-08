@@ -12,6 +12,7 @@ SDD significa Spec Driven Development.
 |---|---|---|---|---|---|
 | Constitucion de Copilot | .github/copilot-instructions.md | Reglas globales, limites y precedencia | Si | Si | Si |
 | Instructions | .github/instructions/ | Reglas operativas por contexto y fase | Si | Si | Si |
+| Agentes metodologicos SDD | .github/agents/ | Agentes documentales que gobiernan specification, architecture, planning, review, gates e implementation | Si | Si | Si |
 | Prompts | .github/prompts/ | Arranque, evaluacion y guias operativas | Si | Si | Si |
 | Skills | .github/skills/ | Capacidades documentales reutilizables | No obligatorio | Si, sin ejecucion compleja | Si, segun aprobacion |
 | Specs de repositorio | specs/ | Definicion canonica de alcance, limites y gobierno | Si | Si | Si |
@@ -37,6 +38,8 @@ SDD significa Spec Driven Development.
 Nota:
 
 Los inputs/outputs y limites de cada agente deben vivir en su spec. No se crea contract separado por defecto.
+
+Los agentes metodológicos SDD viven en `.github/agents/` y no representan capacidades funcionales del negocio.
 
 ## 2.2 Nota sobre Tasks
 

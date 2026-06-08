@@ -61,9 +61,10 @@ Orden de precedencia:
 1. bkm_procesos como verdad funcional.
 2. specs del repo bkm-operational-agents.
 3. este archivo de copilot-instructions.
-4. skills en .github/skills.
-5. prompts en .github/prompts.
-6. docs, workflows, tools, memory y tests.
+4. agentes metodologicos en .github/agents.
+5. skills en .github/skills.
+6. prompts en .github/prompts.
+7. docs, workflows, tools, memory y tests.
 
 Ningun artefacto de menor precedencia puede contradecir a uno de mayor precedencia.
 

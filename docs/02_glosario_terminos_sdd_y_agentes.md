@@ -77,6 +77,14 @@ Las instructions:
 - no duplican logica funcional de `bkm-procesos`;
 - no redefinen SOPs.
 
+### Agentes metodologicos SDD
+
+Agentes documentales definidos en `.github/agents/` para gobernar el ciclo SDD del repositorio.
+
+No representan capacidades funcionales del negocio.
+
+Su funcion es ayudar a estructurar specification, architecture, planning, review, documentation, gates e implementation dentro de la fase permitida.
+
 ## 4. Regla anti-sobreingenieria documental
 
 Antes de crear un nuevo tipo de artefacto documental:
@@ -109,9 +117,10 @@ En caso de conflicto:
 1. `bkm-procesos` (verdad funcional)
 2. specs del repositorio
 3. `.github/copilot-instructions.md`
-4. skills
-5. prompts
-6. docs/workflows/tools/memory/tests
+4. `.github/agents/`
+5. skills
+6. prompts
+7. docs/workflows/tools/memory/tests
 
 ## 7. Terminos SDD esenciales
 
@@ -142,6 +151,7 @@ La decision final es humana; el sistema asiste, no sustituye el criterio humano.
 ## 8. Checklist rapido de uso
 
 - Si necesitas definir una capacidad: actualiza la spec.
+- Si necesitas gobernar una fase o un artefacto SDD: usa el agente metodologico correspondiente.
 - Si necesitas una regla global: evalua contract transversal.
 - Si necesitas pautar comportamiento del asistente: usa instructions.
 - Si necesitas invocacion operativa: usa prompt/comando.

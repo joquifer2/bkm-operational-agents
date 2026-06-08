@@ -61,6 +61,7 @@ No es una lista diaria de tareas operativas.
 | TASK-006 | Diseñar contrato futuro de BigQuery Tool | Definir contrato de solo lectura para futura consulta BigQuery desde el agente | Development futuro | Integración futura | Pendiente | `tools/bigquery/` | Contrato creado sin implementación |
 | TASK-007 | Evaluar integración futura con Notion mediante MCP | Analizar si las tareas del backlog pueden derivarse a Notion sin romper la gobernanza SDD | Development futuro | Integración futura | Pendiente | `docs/tasks.md` | Decisión documentada, sin implementación prematura |
 | TASK-008 | Crear skill transversal de git sync seguro | Definir procedimiento seguro de `status/add/commit/push` con confirmaciones humanas y control de sensibles | Structure | Skill | Hecha | `.github/skills/git-sync-seguro/SKILL.md` | Skill creada y alineada con SDD |
+| TASK-009 | Crear agentes metodológicos SDD | Definir y registrar agentes metodológicos para specification, architecture, planning, review, documentation, gates e implementation | Structure | Documentación | Hecha | `.github/agents/` | Agentes creados y catálogo/documentación alineados |
 
 ---
 

@@ -58,7 +58,7 @@ Los siguientes agentes son parte de la capa metodológica SDD y no representan c
 
 ## 5. Reglas de alta de nuevos agentes
 
-Antes de añadir un nuevo agente a este catálogo debe existir, como mínimo:
+Antes de añadir un nuevo agente funcional a este catálogo debe existir, como mínimo:
 
 - proceso fuente en `bkm-procesos`;
 - spec del agente;
@@ -67,6 +67,13 @@ Antes de añadir un nuevo agente a este catálogo debe existir, como mínimo:
 - estado SDD asignado.
 
 No se debe crear un agente nuevo sin proceso funcional asociado.
+
+Para agentes metodológicos SDD debe existir, como mínimo:
+
+- responsabilidad metodológica definida;
+- archivo del agente en `.github/agents/`;
+- alineación explícita con la fase SDD y la precedencia documental;
+- límites claros para evitar implementación prematura.
 
 ## 6. Reglas de mantenimiento
 
@@ -77,6 +84,7 @@ Actualizar este archivo cuando:
 - se crea o cambia su comando;
 - se crea o cambia su skill;
 - se crea o cambia su eval;
+- se crea o cambia un agente metodológico SDD;
 - un agente queda deprecado.
 
 No usar este archivo para documentar la lógica completa del agente.

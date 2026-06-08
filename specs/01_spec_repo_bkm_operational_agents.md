@@ -63,6 +63,7 @@ Queda fuera de alcance en esta fase:
 
 - .github/copilot-instructions.md: constitucion global del repositorio.
 - .github/instructions/: reglas operativas por metodo o contexto.
+- .github/agents/: agentes metodologicos SDD para gobernar specification, architecture, planning, review, gates e implementation.
 - .github/prompts/: prompts reutilizables de arranque, evaluacion y trabajo.
 - .github/skills/: skills documentales y de capacidad, no ejecutables complejas por ahora.
 - docs/: documentacion de contexto y decisiones del proyecto.
@@ -103,6 +104,7 @@ Estructura minima esperada:
 
 - .github/
 - .github/instructions/
+- .github/agents/
 - .github/prompts/
 - .github/skills/
 - docs/
@@ -214,9 +216,10 @@ Orden de precedencia:
 1. bkm_procesos como verdad funcional.
 2. specs del repositorio.
 3. .github/copilot-instructions.md.
-4. .github/skills/.
-5. .github/prompts/.
-6. docs, workflows, tools, memory, tests.
+4. .github/agents/.
+5. .github/skills/.
+6. .github/prompts/.
+7. docs, workflows, tools, memory, tests.
 
 ## 15. Checklist para pasar a Development
 

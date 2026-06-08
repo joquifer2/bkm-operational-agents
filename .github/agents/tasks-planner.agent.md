@@ -3,10 +3,6 @@ type: sdd
 category: methodological
 id: SDD-AGENT-003
 name: Tasks Planner Agent
----
-
----
-name: Tasks Planner Agent
 description: Convierte especificaciones y diseños arquitectónicos aprobados en planes de trabajo SDD claros, trazables y ordenados.
 ---
 
