@@ -31,6 +31,20 @@ Todo agente listado aquí debe respetar:
 |---|---|---|---|---|---|---|---|
 | AGENT-001 | Agente de informe mensual de Planificación de Demanda | `specs/02_spec_agente_principal_v0_1.md` | `bkm-procesos/procesos_publicitarios/01_proceso_planificacion_demanda.md` | Structure | `/informe-planificacion-demanda` | `.github/skills/informe-planificacion-demanda/SKILL.md` | `tests/evals/evaluar_informe_planificacion_demanda.md` |
 
+## SDD — Agentes metodológicos
+
+Los siguientes agentes son parte de la capa metodológica SDD y no representan capacidades funcionales del negocio. Su función es gobernar el ciclo SDD del repositorio.
+
+| ID | Nombre | Archivo | Responsabilidad | Estado |
+|---|---|---|---|---|
+| SDD-AGENT-001 | Specification Agent | `.github/agents/specification.agent.md` | Convertir necesidades en specifications | Active |
+| SDD-AGENT-002 | Architect Agent | `.github/agents/architect.agent.md` | Diseñar arquitectura desde specs aprobadas | Active |
+| SDD-AGENT-003 | Tasks Planner Agent | `.github/agents/tasks-planner.agent.md` | Convertir specs y arquitectura en tareas trazables | Active |
+| SDD-AGENT-004 | Reviewer Agent | `.github/agents/reviewer.agent.md` | Revisar coherencia, riesgos y trazabilidad | Active |
+| SDD-AGENT-005 | Documentation Agent | `.github/agents/documentation.agent.md` | Mantener documentación clara y navegable | Active |
+| SDD-AGENT-006 | QA Gate Agent | `.github/agents/qa-gate.agent.md` | Validar gates entre fases SDD | Active |
+| SDD-AGENT-007 | Implementation Agent | `.github/agents/implementation.agent.md` | Implementar solo trabajo definido y autorizado | Active |
+
 ## 4. Estados posibles
 
 - Proposed
