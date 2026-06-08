@@ -29,6 +29,7 @@ SDD significa Spec Driven Development.
 
 - spec del agente de informe mensual: specs/02_spec_agente_principal_v0_1.md
 - skill documental: .github/skills/informe-planificacion-demanda/SKILL.md
+- skill transversal de sincronizacion git (operativa): .github/skills/git-sync-seguro/SKILL.md
 - prompt/comando: .github/prompts/informe-planificacion-demanda.prompt.md
 - workflow conceptual: workflows/01_workflow_informe_planificacion_demanda.md
 - eval documental: tests/evals/evaluar_informe_planificacion_demanda.md
