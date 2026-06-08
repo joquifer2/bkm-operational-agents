@@ -4,7 +4,7 @@
 
 bkm-operational-agents define la capa IA/operativa para asistencia y control documental sobre la operativa de BKM.
 
-Este repositorio no define la verdad funcional del negocio. Su finalidad es organizar contratos, instrucciones y artefactos de razonamiento operativo bajo metodologia SDD (Spec Driven Development).
+Este repositorio no define la verdad funcional del negocio. Su finalidad es organizar especificaciones, instrucciones y artefactos de razonamiento operativo bajo metodologia SDD (Spec Driven Development).
 
 ## 2. Relacion con bkm_procesos
 
@@ -40,11 +40,12 @@ Queda fuera de alcance en esta fase:
 
 ### 3.1 Si pertenece
 
-- contratos documentales SDD;
+- especificaciones SDD de repositorio, agentes y capacidades;
 - instrucciones de Copilot;
 - prompts de trabajo;
 - skills documentales;
 - especificaciones del sistema de agentes;
+- contracts separados solo cuando sean transversales;
 - politicas de workflows, tools y memoria;
 - criterios de validacion y checklist de avance.
 
@@ -70,6 +71,31 @@ Queda fuera de alcance en esta fase:
 - tools/: contratos de herramientas futuras, no implementacion.
 - memory/: politica de memoria y limites.
 - tests/: validaciones documentales y de calidad.
+
+## 4.1 Definiciones canonicas
+
+Spec:
+
+- artefacto principal para describir que es algo, que debe hacer, que limites tiene, que inputs/outputs acepta y que reglas debe respetar;
+- puede incluir proposito, alcance, responsabilidades, inputs, outputs, restricciones, riesgos, reglas de gobierno, criterios de aceptacion y Definition of Done.
+
+Contract:
+
+- no debe ser un archivo separado por defecto;
+- solo debe existir separado si define reglas transversales del repositorio o del sistema completo;
+- ejemplos validos: source of truth, precedencia documental, politica de memoria, politica de tools, human-in-the-loop y resolucion de conflictos entre fuentes.
+
+Instructions:
+
+- reglas de comportamiento para Copilot o para contextos concretos de trabajo;
+- no sustituyen specs;
+- no duplican logica funcional de bkm_procesos;
+- no redefinen SOPs.
+
+Regla anti-sobreingenieria documental:
+
+- antes de crear un nuevo tipo de artefacto documental, comprobar si puede resolverse con una seccion dentro de una spec existente;
+- no crear contracts separados salvo que la regla afecte a varios agentes, varias skills o al repositorio completo.
 
 ## 5. Estructura de carpetas
 

@@ -2,7 +2,7 @@
 
 ## 1. Objetivo
 
-Evaluar si un informe generado por el agente respeta el SOP y el contrato documental.
+Evaluar si un informe generado por el agente respeta el SOP y la spec canonica del agente.
 
 ## 2. Criterios obligatorios
 

@@ -29,7 +29,7 @@ La skill puede usar:
 - exportaciones del dashboard;
 - resumenes de BigQuery proporcionados por el usuario;
 - metricas visibles documentadas;
-- contratos documentales del repositorio.
+- reglas definidas en la spec del agente y en contracts transversales del repositorio.
 
 En esta fase no se conecta directamente a BigQuery.
 

@@ -8,11 +8,17 @@ No es un repositorio de SOPs ni de logica funcional de negocio.
 
 Su objetivo es documentar y organizar:
 
-- contratos de comportamiento IA;
 - especificaciones del sistema de agentes operativos;
 - instrucciones, prompts y skills de Copilot;
 - politicas de uso, limites y trazabilidad;
 - criterios de calidad para evolucionar de Specification a Structure y Development.
+
+Regla de simplificacion documental:
+
+- la spec es el artefacto principal para agentes, capacidades o componentes;
+- las restricciones, limites y reglas de gobierno deben vivir preferentemente dentro de cada spec;
+- no crear contracts separados por agente o skill si su contenido puede resolverse dentro de la spec;
+- reservar contracts separados solo para reglas transversales del repositorio o del sistema completo.
 
 ## 2. Relacion con bkm_procesos
 
@@ -38,7 +44,7 @@ Cuando exista conflicto entre documentos, prevalece la verdad funcional de bkm_p
 
 Este repositorio debe evolucionar por fases SDD (Spec Driven Development):
 
-- Specification: definicion de alcance, contratos, limites, riesgos y criterios de avance.
+- Specification: definicion de que es cada capacidad, que debe hacer, sus limites, inputs/outputs, riesgos y criterios de avance.
 - Structure: organizacion documental y esqueletos minimos no ejecutables.
 - Development: implementacion tecnica, solo tras cierre formal de fases previas.
 
@@ -60,6 +66,10 @@ Orden de precedencia:
 6. docs, workflows, tools, memory y tests.
 
 Ningun artefacto de menor precedencia puede contradecir a uno de mayor precedencia.
+
+Regla de contracts transversales:
+
+Un contract separado solo es valido si define reglas que aplican a varios agentes, varias skills o al repositorio completo. Ejemplos: source of truth, precedencia documental, politica de memoria, politica de tools, human-in-the-loop y resolucion de conflictos entre fuentes.
 
 ## 5. Restricciones de arquitectura prematura
 
@@ -140,7 +150,13 @@ Mientras no se autorice Development:
 - no crear integraciones reales;
 - no crear automatizacion operativa.
 
-Primero se cierran contratos documentales y estructura base.
+Primero se cierran specs y estructura base.
+
+## 9.1 Regla anti-sobreingenieria documental
+
+Antes de crear un nuevo tipo de artefacto documental, comprobar si la necesidad se puede resolver con una nueva seccion dentro de una spec existente.
+
+No crear contracts separados salvo que la regla afecte a varios agentes, varias skills o al repositorio completo.
 
 ## 10. TASKS GOVERNANCE
 
@@ -176,7 +192,7 @@ El backlog debe reflejar trabajo significativo del repositorio, no actividad ope
 Antes de considerar completado un cambio significativo:
 
 1. Revisar si afecta a Specs.
-2. Revisar si afecta a Contracts.
+2. Revisar si afecta a Contracts transversales.
 3. Revisar si afecta a Skills.
 4. Revisar si afecta a Prompts.
 5. Revisar si afecta a Gates.

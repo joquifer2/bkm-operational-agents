@@ -62,11 +62,15 @@ El gate verifica que el repositorio mantiene:
 - Existe taxonomia de artefactos y estructura de carpetas.
 - Existe matriz de artefactos con permitido/no permitido por fase.
 - Existe spec v0.1 del agente de informe mensual con foco documental.
-- Existe contrato documental del informe mensual.
 - Existe skill documental del informe mensual.
 - Existe prompt/comando /informe-planificacion-demanda.
 - Existe eval documental del informe mensual.
 - Existe checklist de salida documental para fase posterior.
+
+Regla de consistencia documental:
+
+- los inputs/outputs y limites por agente deben estar en la spec del agente;
+- los contracts separados solo se aceptan para reglas transversales.
 
 ## 5. Evidencias esperadas
 
@@ -74,7 +78,6 @@ El gate verifica que el repositorio mantiene:
 - docs/01_matriz_artefactos_sdd.md
 - specs/01_spec_repo_bkm_operational_agents.md
 - specs/02_spec_agente_principal_v0_1.md
-- specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md
 - .github/copilot-instructions.md
 - .github/instructions/sdd.instructions.md
 - .github/prompts/00_iniciar_proyecto_sdd.prompt.md

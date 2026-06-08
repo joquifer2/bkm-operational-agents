@@ -23,7 +23,8 @@ Permitido:
 - definir alcance;
 - definir limites;
 - definir taxonomias;
-- definir contratos documentales;
+- definir inputs y outputs dentro de la spec;
+- definir restricciones y reglas de gobierno dentro de la spec;
 - definir riesgos;
 - definir criterios de salida de fase.
 
@@ -58,12 +59,17 @@ Hasta ese momento, cualquier implementacion queda fuera de alcance.
 
 ## 4. Comportamiento esperado durante Specification
 
-- priorizar claridad contractual sobre soluciones tecnicas;
+- priorizar claridad de spec sobre soluciones tecnicas;
 - mantener separacion estricta respecto a bkm_procesos;
 - no duplicar logica funcional;
 - no crear decisiones tecnologicas definitivas;
 - mantener foco inicial del primer agente en informe mensual de indicadores operativos del proceso de Planificacion de Demanda;
 - marcar pendientes y riesgos cuando falte validacion.
+
+Reglas de simplificacion documental:
+
+- antes de crear un nuevo tipo de artefacto, comprobar si puede resolverse como seccion de una spec existente;
+- no crear contracts separados salvo que sean transversales a varias capacidades o a todo el repositorio.
 
 ## 5. Restricciones actuales obligatorias
 
@@ -80,7 +86,7 @@ No hacer todavia:
 
 Si una propuesta entra en implementacion, debe detenerse y volver a:
 
-- contrato;
+- spec;
 - limites;
 - evidencia documental;
 - criterio de fase.
@@ -101,7 +107,7 @@ Estas instrucciones se consideran cumplidas cuando:
 No sustituye:
 
 - specs;
-- contracts;
+- contracts transversales;
 - skills;
 - prompts;
 - gates;

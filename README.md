@@ -12,9 +12,15 @@ Estado actual:
 Alcance inicial:
 
 - estructura documental minima;
-- contratos SDD base;
-- instrucciones, prompts y especificaciones.
+- especificaciones SDD base;
+- instructions, prompts y skills de trabajo.
 - foco inicial del primer agente en informe mensual de indicadores operativos de Planificacion de Demanda.
+
+Reglas documentales clave:
+
+- la spec es el artefacto principal para agentes, capacidades y componentes;
+- los contracts separados quedan reservados para reglas transversales del repositorio/sistema;
+- las instructions definen comportamiento de Copilot y no sustituyen specs funcionales.
 
 Fuera de alcance por ahora:
 

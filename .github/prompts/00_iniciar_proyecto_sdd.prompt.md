@@ -21,11 +21,11 @@ Usa este prompt como punto de arranque para cualquier sesion de trabajo en bkm-o
 
 Debes seguir el plan aprobado del proyecto, que establece:
 
-1. El foco actual es contrato y arquitectura documental.
+1. El foco actual es spec y arquitectura documental.
 2. Este repo no replica bkm_procesos.
 3. Antes de Development debe cerrarse Specification v0.1.
 4. Artefactos de Copilot dentro de .github.
-5. Contratos de proyecto fuera de .github.
+5. Los contracts separados quedan reservados para reglas transversales del repositorio.
 6. Sin framework por ahora.
 7. Sin runtime por ahora.
 8. Sin multiagente por ahora.
@@ -42,9 +42,13 @@ Debes seguir el plan aprobado del proyecto, que establece:
 ## Comportamiento esperado de Copilot
 
 - Trabajar como arquitecto SDD, no como implementador prematuro.
-- Producir contratos claros, limites y criterios de salida.
+- Producir specs claras con limites, reglas y criterios de salida.
 - Señalar riesgos de sobreingenieria y arquitectura prematura.
 - Mantener filosofia human-in-the-loop, explicable y mantenible.
+
+Regla explicita:
+
+Antes de crear un nuevo tipo de artefacto documental, comprobar si la necesidad puede resolverse dentro de una spec existente.
 
 ## Resultado esperado de una sesion tipo
 

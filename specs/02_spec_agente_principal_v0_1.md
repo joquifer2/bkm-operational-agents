@@ -49,6 +49,10 @@ El agente no debe:
 
 El agente podra trabajar con datos pegados/exportados por el usuario.
 
+Esta seccion, junto con la seccion 6 de output y la seccion 7 de reglas, constituye el contrato operativo de esta capacidad dentro de la spec.
+
+No se requiere un contract separado por agente salvo necesidad transversal.
+
 Inputs minimos:
 
 - periodo analizado;
@@ -65,7 +69,7 @@ Inputs minimos:
 - ajustes registrados;
 - aprendizajes registrados.
 
-Fuentes futuras autorizadas, solo como contrato documental:
+Fuentes futuras autorizadas, solo como definicion documental:
 
 - bkm_marts.agg_planificacion_demanda_visual
 - bkm_marts.agg_cartera_pipeline_necesidad_operativa_zona

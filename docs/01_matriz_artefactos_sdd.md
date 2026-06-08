@@ -14,9 +14,9 @@ SDD significa Spec Driven Development.
 | Instructions | .github/instructions/ | Reglas operativas por contexto y fase | Si | Si | Si |
 | Prompts | .github/prompts/ | Arranque, evaluacion y guias operativas | Si | Si | Si |
 | Skills | .github/skills/ | Capacidades documentales reutilizables | No obligatorio | Si, sin ejecucion compleja | Si, segun aprobacion |
-| Specs de repositorio | specs/ | Contratos de alcance y arquitectura documental | Si | Si | Si |
+| Specs de repositorio | specs/ | Definicion canonica de alcance, limites y gobierno | Si | Si | Si |
 | Specs de agente | specs/ | Definicion funcional y limites del agente | Si | Si | Si |
-| Contracts | specs/contracts/ | Contratos documentales de input/output del informe | Si | Si | Si |
+| Contracts transversales | specs/contracts/ | Reglas globales que aplican a varias capacidades o al repositorio completo | Opcional | Opcional | Si, cuando aplique |
 | Gates de gobernanza | docs/gates/ | Readiness y transicion entre fases | Si | Si | Si |
 | Docs de proyecto | docs/ | Contexto, taxonomia, decisiones y matriz | Si | Si | Si |
 | Tasks | docs/tasks.md | Backlog documental y técnico del repositorio | Opcional | Sí | Sí |
@@ -28,11 +28,14 @@ SDD significa Spec Driven Development.
 ## 2.1 Artefactos obligatorios del primer caso de uso
 
 - spec del agente de informe mensual: specs/02_spec_agente_principal_v0_1.md
-- contrato del informe: specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md
 - skill documental: .github/skills/informe-planificacion-demanda/SKILL.md
 - prompt/comando: .github/prompts/informe-planificacion-demanda.prompt.md
 - workflow conceptual: workflows/01_workflow_informe_planificacion_demanda.md
 - eval documental: tests/evals/evaluar_informe_planificacion_demanda.md
+
+Nota:
+
+Los inputs/outputs y limites de cada agente deben vivir en su spec. No se crea contract separado por defecto.
 
 ## 2.2 Nota sobre Tasks
 

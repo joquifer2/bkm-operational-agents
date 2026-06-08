@@ -16,9 +16,9 @@ Usa la skill:
 
 `.github/skills/informe-planificacion-demanda/SKILL.md`
 
-y el contrato:
+y la spec:
 
-`specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md`
+`specs/02_spec_agente_principal_v0_1.md`
 
 para generar un informe mensual de Planificacion de Demanda.
 

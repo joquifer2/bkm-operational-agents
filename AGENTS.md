@@ -27,9 +27,9 @@ Todo agente listado aquí debe respetar:
 
 ## 3. Agentes registrados
 
-| ID | Nombre funcional | Spec | Proceso fuente | Estado | Comando | Skill | Contract | Eval |
-|---|---|---|---|---|---|---|---|---|
-| AGENT-001 | Agente de informe mensual de Planificación de Demanda | `specs/02_spec_agente_principal_v0_1.md` | `bkm-procesos/procesos_publicitarios/01_proceso_planificacion_demanda.md` | Structure | `/informe-planificacion-demanda` | `.github/skills/informe-planificacion-demanda/SKILL.md` | `specs/contracts/01_contract_informe_indicadores_planificacion_demanda.md` | `tests/evals/evaluar_informe_planificacion_demanda.md` |
+| ID | Nombre funcional | Spec | Proceso fuente | Estado | Comando | Skill | Eval |
+|---|---|---|---|---|---|---|---|
+| AGENT-001 | Agente de informe mensual de Planificación de Demanda | `specs/02_spec_agente_principal_v0_1.md` | `bkm-procesos/procesos_publicitarios/01_proceso_planificacion_demanda.md` | Structure | `/informe-planificacion-demanda` | `.github/skills/informe-planificacion-demanda/SKILL.md` | `tests/evals/evaluar_informe_planificacion_demanda.md` |
 
 ## 4. Estados posibles
 
@@ -62,7 +62,6 @@ Actualizar este archivo cuando:
 - cambia el estado SDD de un agente;
 - se crea o cambia su comando;
 - se crea o cambia su skill;
-- se crea o cambia su contract;
 - se crea o cambia su eval;
 - un agente queda deprecado.
 
